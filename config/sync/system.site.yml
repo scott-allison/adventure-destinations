@@ -3,7 +3,7 @@ _core:
 langcode: en
 uuid: d7506b49-2f47-47f2-a87b-e925bff30c07
 name: 'Adventure Destinations'
-mail: 
+mail: null
 slogan: ''
 page:
   403: ''
