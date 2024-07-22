@@ -5,8 +5,12 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.activities.body
+    - field.field.node.activities.field_address
+    - field.field.node.activities.field_image
+    - image.style.medium
     - node.type.activities
   module:
+    - image
     - text
     - user
 id: node.activities.teaser
@@ -22,9 +26,21 @@ content:
     third_party_settings: {  }
     weight: 101
     region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: -1
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_address: true

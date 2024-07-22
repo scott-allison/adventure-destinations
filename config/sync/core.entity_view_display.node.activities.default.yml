@@ -4,8 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.activities.body
+    - field.field.node.activities.field_address
+    - field.field.node.activities.field_image
+    - image.style.wide
     - node.type.activities
   module:
+    - address
+    - image
     - text
     - user
 id: node.activities.default
@@ -19,6 +24,24 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_address:
+    type: address_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: wide
+      image_loading:
+        attribute: eager
+    third_party_settings: {  }
+    weight: -1
     region: content
   links:
     settings: {  }

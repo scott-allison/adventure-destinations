@@ -4,8 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.activities.body
+    - field.field.node.activities.field_address
+    - field.field.node.activities.field_image
+    - image.style.thumbnail
     - node.type.activities
   module:
+    - address
+    - image
     - path
     - text
 id: node.activities.default
@@ -28,6 +33,21 @@ content:
     weight: 10
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_address:
+    type: address_default
+    weight: 122
+    region: content
+    settings:
+      wrapper_type: fieldset
+    third_party_settings: {  }
+  field_image:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
   path:
     type: path
