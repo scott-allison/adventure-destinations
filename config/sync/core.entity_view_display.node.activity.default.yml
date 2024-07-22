@@ -3,19 +3,21 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.activities.body
-    - field.field.node.activities.field_address
-    - field.field.node.activities.field_image
+    - field.field.node.activity.body
+    - field.field.node.activity.field_address
+    - field.field.node.activity.field_image
+    - field.field.node.activity.field_related
+    - field.field.node.activity.field_trail
     - image.style.wide
-    - node.type.activities
+    - node.type.activity
   module:
     - address
     - image
     - text
     - user
-id: node.activities.default
+id: node.activity.default
 targetEntityType: node
-bundle: activities
+bundle: activity
 mode: default
 content:
   body:
@@ -23,14 +25,14 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
+    weight: 2
     region: content
   field_address:
     type: address_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 102
+    weight: 4
     region: content
   field_image:
     type: image
@@ -41,11 +43,27 @@ content:
       image_loading:
         attribute: eager
     third_party_settings: {  }
-    weight: -1
+    weight: 0
+    region: content
+  field_related:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_trail:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 1
     region: content
 hidden: {  }

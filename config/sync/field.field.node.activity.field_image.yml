@@ -4,13 +4,13 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_image
-    - node.type.activities
+    - node.type.activity
   module:
     - image
-id: node.activities.field_image
+id: node.activity.field_image
 field_name: field_image
 entity_type: node
-bundle: activities
+bundle: activity
 label: Image
 description: ''
 required: false

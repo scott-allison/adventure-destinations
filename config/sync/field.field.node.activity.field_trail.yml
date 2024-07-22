@@ -1,0 +1,24 @@
+uuid: cff59a2c-7fcb-431d-a5e9-7e0a26d2d8ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_trail
+    - filter.format.full_html
+    - node.type.activity
+  module:
+    - text
+id: node.activity.field_trail
+field_name: field_trail
+entity_type: node
+bundle: activity
+label: Trail
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

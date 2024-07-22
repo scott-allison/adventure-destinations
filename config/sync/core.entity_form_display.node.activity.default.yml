@@ -3,19 +3,21 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.activities.body
-    - field.field.node.activities.field_address
-    - field.field.node.activities.field_image
+    - field.field.node.activity.body
+    - field.field.node.activity.field_address
+    - field.field.node.activity.field_image
+    - field.field.node.activity.field_related
+    - field.field.node.activity.field_trail
     - image.style.thumbnail
-    - node.type.activities
+    - node.type.activity
   module:
     - address
     - image
     - path
     - text
-id: node.activities.default
+id: node.activity.default
 targetEntityType: node
-bundle: activities
+bundle: activity
 mode: default
 content:
   body:
@@ -48,6 +50,24 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_related:
+    type: entity_reference_autocomplete
+    weight: 124
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_trail:
+    type: text_textarea
+    weight: 123
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
     third_party_settings: {  }
   path:
     type: path

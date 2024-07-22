@@ -3,11 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.activities
-id: node.activities.promote
+    - node.type.activity
+id: node.activity.promote
 field_name: promote
 entity_type: node
-bundle: activities
+bundle: activity
 label: 'Promoted to front page'
 description: ''
 required: false

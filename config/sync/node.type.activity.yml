@@ -9,8 +9,8 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: Activities
-type: activities
+name: Activity
+type: activity
 description: 'Featured things to do in the area'
 help: null
 new_revision: true

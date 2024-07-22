@@ -4,13 +4,13 @@ status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.activities
+    - node.type.activity
   module:
     - text
-id: node.activities.body
+id: node.activity.body
 field_name: body
 entity_type: node
-bundle: activities
+bundle: activity
 label: Body
 description: ''
 required: false

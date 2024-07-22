@@ -4,13 +4,13 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_address
-    - node.type.activities
+    - node.type.activity
   module:
     - address
-id: node.activities.field_address
+id: node.activity.field_address
 field_name: field_address
 entity_type: node
-bundle: activities
+bundle: activity
 label: Address
 description: ''
 required: false

@@ -1,0 +1,38 @@
+uuid: 023aae6f-41e4-43bc-a5d8-ace373262ffb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.activity.body
+    - field.field.node.activity.field_address
+    - field.field.node.activity.field_image
+    - field.field.node.activity.field_related
+    - field.field.node.activity.field_trail
+    - image.style.medium
+    - node.type.activity
+  module:
+    - image
+    - user
+id: node.activity.teaser
+targetEntityType: node
+bundle: activity
+mode: teaser
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_address: true
+  field_related: true
+  field_trail: true
+  links: true
