@@ -1,0 +1,28 @@
+uuid: dbbebdac-e3e4-43e5-923a-a2abb81f7591
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related
+    - node.type.restaurant
+id: node.restaurant.field_related
+field_name: field_related
+entity_type: node
+bundle: restaurant
+label: "What's Nearby"
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      restaurant: restaurant
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

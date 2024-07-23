@@ -1,23 +1,24 @@
-uuid: 023aae6f-41e4-43bc-a5d8-ace373262ffb
+uuid: 3c6b48b2-785d-4435-b38f-8720dc8f500f
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.activity.body
-    - field.field.node.activity.field_address
-    - field.field.node.activity.field_image
-    - field.field.node.activity.field_related
-    - field.field.node.activity.field_tags
-    - field.field.node.activity.field_trail
+    - field.field.node.restaurant.body
+    - field.field.node.restaurant.field_address
+    - field.field.node.restaurant.field_image
+    - field.field.node.restaurant.field_menu
+    - field.field.node.restaurant.field_related
+    - field.field.node.restaurant.field_tags
+    - field.field.node.restaurant.field_website
     - image.style.medium
-    - node.type.activity
+    - node.type.restaurant
   module:
     - image
     - user
-id: node.activity.teaser
+id: node.restaurant.teaser
 targetEntityType: node
-bundle: activity
+bundle: restaurant
 mode: teaser
 content:
   field_image:
@@ -34,7 +35,8 @@ content:
 hidden:
   body: true
   field_address: true
+  field_menu: true
   field_related: true
   field_tags: true
-  field_trail: true
+  field_website: true
   links: true

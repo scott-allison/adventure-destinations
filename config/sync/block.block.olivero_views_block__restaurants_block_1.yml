@@ -1,26 +1,26 @@
-uuid: 499dea7d-508f-4e95-ad72-6c6ad0d20890
+uuid: cf94eb24-9bcc-43d6-894d-97b725126184
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.activities
+    - views.view.restaurants
   module:
     - system
     - views
   theme:
     - olivero
-id: olivero_views_block__activities_block_1
+id: olivero_views_block__restaurants_block_1
 theme: olivero
 region: content
-weight: -6
+weight: -5
 provider: null
-plugin: 'views_block:activities-block_1'
+plugin: 'views_block:restaurants-block_1'
 settings:
-  id: 'views_block:activities-block_1'
-  label: 'Things To Do'
+  id: 'views_block:restaurants-block_1'
+  label: 'Where to Eat'
   label_display: visible
   provider: views
-  views_label: 'Things To Do'
+  views_label: 'Where to Eat'
   items_per_page: none
 visibility:
   request_path:
