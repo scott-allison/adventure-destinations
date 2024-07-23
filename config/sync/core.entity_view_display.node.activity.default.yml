@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.activity.field_address
     - field.field.node.activity.field_image
     - field.field.node.activity.field_related
+    - field.field.node.activity.field_tags
     - field.field.node.activity.field_trail
     - image.style.wide
     - node.type.activity
@@ -53,6 +54,14 @@ content:
       link: false
     third_party_settings: {  }
     weight: 5
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 10
     region: content
   field_trail:
     type: text_default

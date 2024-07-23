@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.activity.field_address
     - field.field.node.activity.field_image
     - field.field.node.activity.field_related
+    - field.field.node.activity.field_tags
     - field.field.node.activity.field_trail
     - image.style.medium
     - node.type.activity
@@ -29,6 +30,14 @@ content:
         attribute: lazy
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 10
     region: content
 hidden:
   body: true

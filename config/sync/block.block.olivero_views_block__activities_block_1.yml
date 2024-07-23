@@ -1,0 +1,29 @@
+uuid: 499dea7d-508f-4e95-ad72-6c6ad0d20890
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.activities
+  module:
+    - system
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__activities_block_1
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:activities-block_1'
+settings:
+  id: 'views_block:activities-block_1'
+  label: "What's Nearby"
+  label_display: visible
+  provider: views
+  views_label: "What's Nearby"
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

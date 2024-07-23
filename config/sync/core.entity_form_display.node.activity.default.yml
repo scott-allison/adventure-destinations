@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.activity.field_address
     - field.field.node.activity.field_image
     - field.field.node.activity.field_related
+    - field.field.node.activity.field_tags
     - field.field.node.activity.field_trail
     - image.style.thumbnail
     - node.type.activity
@@ -54,6 +55,16 @@ content:
   field_related:
     type: entity_reference_autocomplete
     weight: 124
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_tags:
+    type: entity_reference_autocomplete_tags
+    weight: 3
     region: content
     settings:
       match_operator: CONTAINS
