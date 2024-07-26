@@ -1,0 +1,29 @@
+uuid: f28fc2a1-a8a2-4453-a5c1-65cc973b3005
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.activities
+  module:
+    - system
+    - views
+  theme:
+    - adventure
+id: adventure_views_block__activities_block_1
+theme: adventure
+region: content
+weight: -4
+provider: null
+plugin: 'views_block:activities-block_1'
+settings:
+  id: 'views_block:activities-block_1'
+  label: 'Things To Do'
+  label_display: visible
+  provider: views
+  views_label: 'Things To Do'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

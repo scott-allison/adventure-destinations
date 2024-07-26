@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.activity.body
     - field.field.node.activity.field_address
+    - field.field.node.activity.field_distance
     - field.field.node.activity.field_image
     - field.field.node.activity.field_related
     - field.field.node.activity.field_tags
@@ -34,6 +35,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 4
+    region: content
+  field_distance:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
     region: content
   field_image:
     type: image

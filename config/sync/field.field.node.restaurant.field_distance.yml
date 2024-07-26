@@ -1,0 +1,19 @@
+uuid: 18877873-69a2-4e3e-b277-223e195318a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_distance
+    - node.type.restaurant
+id: node.restaurant.field_distance
+field_name: field_distance
+entity_type: node
+bundle: restaurant
+label: 'Distance form Condo'
+description: 'Enter any distance value to display on teasers. Give guests an idea of how far away an activity or restaurant is.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

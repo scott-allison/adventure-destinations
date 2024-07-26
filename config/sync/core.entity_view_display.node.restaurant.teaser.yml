@@ -6,12 +6,13 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.restaurant.body
     - field.field.node.restaurant.field_address
+    - field.field.node.restaurant.field_distance
     - field.field.node.restaurant.field_image
     - field.field.node.restaurant.field_menu
     - field.field.node.restaurant.field_related
     - field.field.node.restaurant.field_tags
     - field.field.node.restaurant.field_website
-    - image.style.medium
+    - image.style.large
     - node.type.restaurant
   module:
     - image
@@ -26,7 +27,7 @@ content:
     label: hidden
     settings:
       image_link: content
-      image_style: medium
+      image_style: large
       image_loading:
         attribute: lazy
     third_party_settings: {  }
@@ -35,6 +36,7 @@ content:
 hidden:
   body: true
   field_address: true
+  field_distance: true
   field_menu: true
   field_related: true
   field_tags: true

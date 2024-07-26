@@ -1,0 +1,22 @@
+uuid: 76e50192-05bb-488b-9286-3aa442423316
+langcode: en
+status: true
+dependencies:
+  theme:
+    - adventure
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: adventure_primary_local_tasks
+theme: adventure
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

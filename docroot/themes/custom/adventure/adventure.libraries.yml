@@ -1,0 +1,8 @@
+global-styling:
+  version: VERSION
+  js:
+    dist/js/global.js: {}
+  css:
+    component:
+      dist/css/style.css: {}
+      dist/css/colors.css: {}

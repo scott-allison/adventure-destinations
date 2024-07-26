@@ -1,0 +1,23 @@
+uuid: 823a6034-f6d7-4f3e-8747-3ef7c662bf6b
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - adventure
+_core:
+  default_config_hash: yEBET0cqDbk8dkWzaJw-8CKft0961VBflsISoSR6Lj8
+id: adventure_search_form_narrow
+theme: adventure
+region: primary_menu
+weight: -4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (narrow)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

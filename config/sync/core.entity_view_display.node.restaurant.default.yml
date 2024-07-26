@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.restaurant.body
     - field.field.node.restaurant.field_address
+    - field.field.node.restaurant.field_distance
     - field.field.node.restaurant.field_image
     - field.field.node.restaurant.field_menu
     - field.field.node.restaurant.field_related
@@ -36,6 +37,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 4
+    region: content
+  field_distance:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
     region: content
   field_image:
     type: image

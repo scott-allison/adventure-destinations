@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.restaurant.body
     - field.field.node.restaurant.field_address
+    - field.field.node.restaurant.field_distance
     - field.field.node.restaurant.field_image
     - field.field.node.restaurant.field_menu
     - field.field.node.restaurant.field_related
@@ -45,6 +46,14 @@ content:
     region: content
     settings:
       wrapper_type: fieldset
+    third_party_settings: {  }
+  field_distance:
+    type: string_textfield
+    weight: 127
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_image:
     type: image_image

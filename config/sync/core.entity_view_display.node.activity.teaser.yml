@@ -6,11 +6,12 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.activity.body
     - field.field.node.activity.field_address
+    - field.field.node.activity.field_distance
     - field.field.node.activity.field_image
     - field.field.node.activity.field_related
     - field.field.node.activity.field_tags
     - field.field.node.activity.field_trail
-    - image.style.medium
+    - image.style.large
     - node.type.activity
   module:
     - image
@@ -25,7 +26,7 @@ content:
     label: hidden
     settings:
       image_link: content
-      image_style: medium
+      image_style: large
       image_loading:
         attribute: lazy
     third_party_settings: {  }
@@ -34,6 +35,7 @@ content:
 hidden:
   body: true
   field_address: true
+  field_distance: true
   field_related: true
   field_tags: true
   field_trail: true

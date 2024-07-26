@@ -1,0 +1,22 @@
+uuid: 74a10ee5-9df3-4f75-9e80-fe207d4e0fb7
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - adventure
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: adventure_breadcrumbs
+theme: adventure
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }
